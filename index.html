@@ -1,0 +1,150 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Методология БЭМ</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300,700,900">
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+    <div class="header" id="home">
+      <div class="logotype">
+        <img src="./img/header/logotype.png" alt="logotype icon">
+      </div>
+      <div class="header__title title">Clear, smart, attractive design for your app, logo, website</div>
+      <a href="#contact" class="header__button button">Read more</a>
+    </div>
+    <div class="main-menu menu">
+      <div class="main-menu__row menu__row">
+        <a href="#home" class="main-menu__column main-menu__column_active menu__column menu__column_active">Home</a>
+        <a href="#about" class="main-menu__column menu__column">About Us</a>
+        <a href="#portfolio" class="main-menu__column menu__column">Portfolio</a>
+        <a href="#contact" class="main-menu__column menu__column">Contact</a>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <div class="about__header">
+        <div class="about__title title">About</div>
+        <div class="about__text">We specialize in contemporary, functional, and stunning websites with design that really brings that "WOW" factor. 
+          In our design process, we make sure to stay one step ahead of the latest trends, 
+          never forgetting to abide by key web standards.</div>
+      </div>
+      <div class="about__row">
+        <div class="about__column">
+          <div class="item-about">
+            <div class="item_about__icon"><img src="./img/about/01.png" alt="icon"></div>
+            <div class="item-about__title">Web</div>
+            <div class="item_about__text">We tend to deliver unique and functional design, through innovation and creativity.</div>
+          </div>
+        </div>
+        <div class="about__column">
+          <div class="item-about">
+            <div class="item_about__icon"><img src="./img/about/02.png" alt="icon"></div>
+            <div class="item-about__title">iOS and Andoid</div>
+            <div class="item_about__text">We seek to bring new businesses and customers closer together through valuable insights and proper targeting.</div>
+          </div>
+        </div>
+        <div class="about__column">
+          <div class="item-about">
+            <div class="item_about__icon"><img src="./img/about/03.png" alt="icon"></div>
+            <div class="item-about__title">Marketing</div>
+            <div class="item_about__text">We’ll help you establish the right goals and build the right paths. Success depends on setting the right intention.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+      <div class="portfolio__body">
+        <div class="portfolio__title title">Portfolio</div>
+        <div class="portfolio-menu menu">
+          <div class="portfolio-menu__row menu__row">
+            <a href="" class="portfolio-menu__column portfolio-menu__column_active menu__column menu__column_active">All</a>
+            <a href="" class="portfolio-menu__column menu__column">Web</a>
+            <a href="" class="portfolio-menu__column menu__column">Apps</a>
+            <a href="" class="portfolio-menu__column menu__column">Other</a>
+          </div>
+        </div>
+        <div class="portfolio-work">
+          <div class="portfolio-work__row">
+            <div class="portfolio-work__column"></div>
+            <div class="portfolio-work__column"></div>
+          </div>
+          <div class="portfolio-work__row">
+            <div class="portfolio-work__column"></div>
+            <div class="portfolio-work__column"></div>
+          </div>
+          <div class="portfolio-work__row">
+            <div class="portfolio-work__column"></div>
+            <div class="portfolio-work__column"></div>
+          </div>
+        </div>
+        <a href="#" class="portfolio__button button">Read more</a>
+      </div>
+    </div>
+    <div class="partners">
+      <div class="partners__body">
+        <div class="partners__title">Our partners</div>
+        <div class="partners__logotypes">
+          <img src="./img/partners/logo1.png" alt="logotype" class="partners__logotype-first">
+          <img src="./img/partners/logo2.png" alt="logotype" class="partners__logotype-second">
+          <img src="./img/partners/logo3.png" alt="logotype" class="partners__logotype-third">
+          <img src="./img/partners/logo4.png" alt="logotype" class="partners__logotype-fourth">
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <div class="contact__body">
+        <div class="contact__title title">Contact</div>
+        <div class="contact__main">
+          <form class="contact__form">
+            <div class="form-element">
+              <div class="form-element__title">Your name</div>
+              <input type="text" class="form-element__input-field"></input>
+            </div>
+            <div class="form-element">
+              <div class="form-element__title">Your e-mail</div>
+              <input type="text" class="form-element__input-field"></input>
+            </div>
+            <div class="form-element__message form-element">
+              <div class="form-element__title">Message</div>
+              <textarea class="form-element__input-field"></textarea>
+              <button type="submit" name="contact-info" class="contact__button">Send</button>
+            </div>
+          </form>
+          <div class="contact__info">
+            <div class="contact__text">Have an idea for a project? Just looking to explore and see the possibilities? I'm here to help.</div>
+            <div class="contact__name">Postma Elena</div>
+            <div class="contact__social-networks">
+              <a target="_blank" href="https://facebook.com" class="contact__icon">
+                <img src="./img/contact/icon_facebook.png" alt="icon facebook">
+              </a>
+              <a target="_blank" href="https://linkedin.com" class="contact__icon">
+                <img src="./img/contact/icon_linkedin.png" alt="icon linkedin">
+              </a>
+            </div>
+            <div class="contact__email">e-mail: <span>postma.elena@gmail.com</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer" id="footer">
+      <div class="footer__body">
+        <div class="footer__logotype"><img src="./img/footer/logotype_footer.png" alt="logotype"></div>
+        <div class="footer__navigation">
+          <a href="#home" class="footer__link">Home</a>
+          <a target="_blink" href="https://facebook.com" class="footer__link">Facebook</a>
+          <a target="_blink" href="https://linkedin.com" class="footer__link">Linkedin</a>
+          <a href="#contact" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__rights">© 2015. All Rights Reserved</div>
+      </div>
+    </div>
+	</body>
+</html>
